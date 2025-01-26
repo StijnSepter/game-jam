@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/info.css" />
+    <title>Info</title>
+  </head>
+  <body>
+    <div id="home">
+      <a href="/src/index.html"
+        ><button id="HomeButton"><h5>Return</h5></button></a
+      >
+    </div>
+    <div id="container">
+      <!-- <h1>Infomation about the game</h1> -->
+      <div id="info">
+        <div id="teamInfo">
+          <h4>Game description and game thing video</h4>
+          <a href="#" onclick="lightbox_open();">
+            <div id="video">
+              <div id="light">
+                <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                <video id="VisaChipCardVideo" width="600" controls>
+                    <source src="./public/Trailer Bubble Juggle.mp4" type="video/mp4">
+                    <!--Browser does not support <video> tag -->
+                  </video>
+              </div>
+              <div id="fade" onClick="lightbox_close();"></div>
+              
+              <div>
+                <a href="#" onclick="lightbox_open();">Watch video</a>
+              </div>
+              </div>
+          </div>
+        </a>
+          <p>
+            you're a cat, stranded in the vast emptiness of space. Oxygen is
+            running low, and your only chance of survival is to leap from bubble
+            to bubble, fighting the clock to stay alive. Will you surrender to
+            the void, or will you push yourself to the very end? It’s up to you
+            to navigate this high-stakes adventure! Use your mouse to drag
+            yourself between bubbles, but be quick—the oxygen won’t last
+            forever. If you find it too challenging, hit the spacebar to zoom
+            out and get a better view of your surroundings. Every bubble you
+            reach gives you a precious breath of air, but watch out—if you miss
+            your mark, you'll drift helplessly into the abyss of space. And
+            don't forget about the angry aliens lurking around. They won’t be
+            friendly if you collide with them, so steer clear or face the
+            consequences! Survival’s not easy in space, but if you're smart, you
+            might just find your way to the exit. Ready to take the leap?
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+window.document.onkeydown = function(e) {
+  if (!e) {
+    e = event;
+  }
+  if (e.keyCode == 27) {
+    lightbox_close();
+  }
+}
+
+function lightbox_open() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  window.scrollTo(0, 0);
+  document.getElementById('light').style.display = 'block';
+  document.getElementById('fade').style.display = 'block';
+  lightBoxVideo.play();
+}
+
+function lightbox_close() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  document.getElementById('light').style.display = 'none';
+  document.getElementById('fade').style.display = 'none';
+  lightBoxVideo.pause();
+}
+    </script>
+  </body>
+</html>

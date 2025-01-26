@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-image: url("../public/WhatsApp\ Image\ 2025-01-25\ at\ 9.04.42\ PM.jpeg"); ;
+    font-family: '04b30', 'nintendo_ds_biosregular', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+@font-face {
+  font-family: "04b30";
+  src: url("../public/04b_30__-webfont.woff") format("woff2"),
+    url("../public/04b_30__-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nintendo_ds_biosregular";
+  src: url("../public/nintendo-ds-bios-webfont.woff2") format("woff2"),
+    url("../public/nintendo-ds-bios-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+    font-size: 2.6em;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 225px 35% 0 35%;
+}
+
+#info{
+    height: 650px;
+    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  margin-top: 15px;
+  padding: 2%;
+  text-align: center;
+}
+
+h4{
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+p{
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'nintendo_ds_biosregular', sans-serif;
+}
+
+#home{
+  width: 125px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 3rem;
+  position:absolute;
+  top: 5%;
+  left: 20%;
+  background-color: #fff;
+}
+
+h5:hover{
+  background-color: #f2eaea;
+  cursor: pointer;
+}
+#home:hover{
+  background-color: #f2eaea;
+  cursor: pointer;
+}
+#HomeButton:hover{
+  background-color: #f2eaea;
+  cursor: pointer;
+}
+
+#HomeButton{
+  width: 125px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3rem;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+h5{
+  font-family: '04b30', 'nintendo_ds_biosregular', sans-serif;
+  font-size: 1.3em;
+  border-radius: 3rem;
+}
